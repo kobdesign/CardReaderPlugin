@@ -1,0 +1,35 @@
+{
+    "name": "cordova-plugin-smartcardreader",
+    "version": "0.0.1",
+    "description": "An Android Cordova plugin that allows users to received data from Smart card reader.",
+    "cordova": {
+      "id": "cordova-plugin-smartcardreader",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kobdesign/CardReaderPlugin.git"
+    },
+    "keywords": [
+      "SmartCardReader",
+      "Reader",
+      "SmartCard",
+      "CardReader",
+      "ecosystem:cordova",
+      "cordova-android"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.0.0"
+      }
+    ],
+    "author": "Abhisak Chonchanakul <abhisak@ipassion.co.th>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/kobdesign/CardReaderPlugin/issues"
+    },
+    "homepage": "https://github.com/kobdesign/CardReaderPlugin/"
+  }
