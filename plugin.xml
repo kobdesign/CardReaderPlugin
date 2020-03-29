@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-toastyplugin" version="0.0.1">
-    <name>CardReaderPlugin</name>
+        id="MyKadReader"
+        version="0.2">
+
+
+<name>CardReaderPlugin</name>
     <author>Abhisak Chonchanakul</author>
 
     <description>An Android Cordova plugin that allows users to received data from Smart card reader.</description>
@@ -16,7 +19,7 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
 
-    <js-module src="www/smartcardreader.js" name="SmartCardReaderPlugin">
+    <js-module src="www/SmartCardReader.js" name="SmartCardReaderPlugin">
         <clobbers target="SmartCardReader" />
     </js-module>
 
@@ -27,12 +30,12 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/SmartCardReaderPlugin.java" 	target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/SmartCardReader_JPN.java" 	target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/SmartCardReader_Data.java" 	target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/SmartCardReader.java" 		target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/Helper.java" 			        target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/CardReader.java" 		        target-dir="src/smartcard/redone/com/SmartCardReader/"/>
-        <source-file src="src/android/acssmc-1.1.2.jar" 	        target-dir="libs"/>
+        <source-file src="src/android/MyKadPlugin.java" 	target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/MyKad_JPN.java" 		target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/MyKad_Data.java" 		target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/MyKad.java" 			target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/Helper.java" 			target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/CardReader.java" 		target-dir="src/smartcard/redone/com/mykad/"/>
+        <source-file src="src/android/acssmc-1.1.2.jar" 	target-dir="libs"/>
     </platform>
 </plugin>
