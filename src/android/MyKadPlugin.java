@@ -78,7 +78,7 @@ public class MyKadPlugin extends CordovaPlugin {
             message = " Hello, " + name;
             obj.put(MESSAGE,message);
             //Log.d(TAG, "obj is " + obj);
-            callbackContext.success(obj);
+            callbackContext.success(message);
 
             return true;
         }else if (action.equals("read")) {
