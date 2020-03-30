@@ -16,17 +16,19 @@
     <issue>https://github.com/kobdesign/CardReaderPlugin/issues</issue>
 
     <engines>
-        <engine name="cordova" version=">=3.0.0"/>
+        <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <js-module src="www/SmartCardReader.js" name="SmartCardReaderPlugin">
-        <clobbers target="SmartCardReader" />
+    <asset src="www/MyKadReader.js" target="js/MyKadReader.js"/>
+
+    <js-module src="www/MyKadReader.js" name="MyKadReader">
+        <clobbers target="MyKadReader" />
     </js-module>
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="SmartCardReaderPlugin">
-                <param name="android-package" value="smartcard.redone.com.mykad"/>
+            <feature name="MyKadPlugin">
+                <param name="android-package" value="smartcard.redone.com.mykad.MyKadPlugin"/>
             </feature>
         </config-file>
 
@@ -38,4 +40,5 @@
         <source-file src="src/android/CardReader.java" 		target-dir="src/smartcard/redone/com/mykad/"/>
         <source-file src="src/android/acssmc-1.1.2.jar" 	target-dir="libs"/>
     </platform>
+
 </plugin>
