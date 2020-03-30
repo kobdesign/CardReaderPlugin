@@ -148,11 +148,11 @@ public class MyKadPlugin extends CordovaPlugin {
             initializeCardReader();
             if(myKad != null){
                 myKad = new MyKad(myCardReader);
-                //message += "I am IN !";
-                obj.put(MESSAGE, "Card Reader is connected successfully!");
+                message += "I am IN !";
+                //obj.put(MESSAGE, "Card Reader is connected successfully!");
             }
 
-            callbackContext.success(obj);
+            callbackContext.success(message);
             return true;
         }else {
             return false;
