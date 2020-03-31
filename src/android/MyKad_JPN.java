@@ -44,6 +44,7 @@ public class MyKad_JPN {
 
 }
 
+
 /*reference from https://gist.github.com/amree/5251219
 jpn-1-1
 Offset  Length  Length  SDK Function Name        Description
