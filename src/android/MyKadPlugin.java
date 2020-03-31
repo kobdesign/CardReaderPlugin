@@ -138,7 +138,7 @@ public class MyKadPlugin extends CordovaPlugin {
 
                 myCardReader.unpowerCard();
             } catch (Exception e) {
-                essage += "Trying to read card failed "+ e;
+                message += "Trying to read card failed "+ e;
                 //obj.put(MESSAGE, "Trying to read card failed " + e);
                 myCardReader.unpowerCard();
             }
